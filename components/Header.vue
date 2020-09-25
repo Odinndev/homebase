@@ -65,7 +65,7 @@ export default {
 data () {
 
 return {
- loggedIn: true,
+ loggedIn: false,
  userId: '',
 }
 
@@ -80,8 +80,7 @@ filters: {
 },
 
 mounted(){
-
-
+ this.setupFirebase();
 
 },
 
