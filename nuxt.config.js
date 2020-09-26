@@ -1,15 +1,30 @@
 export default {
+  router: {
+    base: '/klor/'
+   },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'homebase',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'apple-mobile-web-app-status-bar-style', content: 'default'},
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
+  },
+  
+  /*
+  ** Customize the progress-bar color
+  */
+  loading: { color: '#fff' },
+  /*
+  ** PWA OPTIONS
+  */
+  manifest: {
+  theme_color: '#FFFFFF',
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
